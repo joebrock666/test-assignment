@@ -52,7 +52,7 @@ class ApiPostController extends Controller
     }
 
     public function post(Request $request){
-        $post = Post::ith(['comments'])->findOrFail($request->id);
+        $post = Post::with(['comments'])->findOrFail($request->id);
 
         return $request->wantsJson()
             ? new JsonResponse( $post, 200)
