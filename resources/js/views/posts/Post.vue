@@ -62,7 +62,6 @@ export default {
 }
 .comment {
     border: 1px solid grey;
-    float: left;
     border-radius: 5px;
     padding: 10px 40px 10px 20px;
     margin: 0 0 20px 0;
