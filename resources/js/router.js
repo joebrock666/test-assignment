@@ -19,7 +19,7 @@ export default {
         },
         {
             name: "Post",
-            path: '/posts/:id/show',
+            path: '/posts/:id',
             props: true,
             component: Post,
         }
